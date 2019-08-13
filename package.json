@@ -4,7 +4,9 @@
   "description": "## Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode production --watch",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/invitae/variant-search-coding-assignment/issues"
   },
-  "homepage": "https://github.com/invitae/variant-search-coding-assignment#readme"
+  "homepage": "https://github.com/invitae/variant-search-coding-assignment#readme",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "webpack": "^4.39.2"
+  }
 }
