@@ -6,6 +6,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode production --watch",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "test": "jest"
   },
   "repository": {
@@ -21,6 +23,10 @@
   "homepage": "https://github.com/invitae/variant-search-coding-assignment#readme",
   "devDependencies": {
     "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
     "webpack": "^4.39.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
