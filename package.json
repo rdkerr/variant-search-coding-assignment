@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --hot",
+    "dev": "webpack-dev-server --mode development --open --hot --watch",
     "start": "node server.js",
     "server": "nodemon server.js",
     "test": "jest"
@@ -23,18 +23,22 @@
   "homepage": "https://github.com/invitae/variant-search-coding-assignment#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.19.1",
     "mysql": "^2.17.1",
